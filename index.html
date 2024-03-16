@@ -1,64 +1,123 @@
 <!DOCTYPE html>
 <html>
-<title>HARSHA Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-}
-.w3-row-padding img {
-  margin-bottom: 12px;
-}
-.w3-sidebar {
-  width: 120px;
-  background: #222;
-}
-#main {
-  margin-left: 120px;
-}
-@media only screen and (max-width: 600px) {
-  #main {
-    margin-left: 0;
-  }
-}
-.image-container {
-  width: 992px;
-  /* Set the desired width */
-  height: 580px;
-  /* Set the desired height */
-  overflow: hidden;
-  /* Hide the overflow */
-}
-.certification-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.certification-card {
-  width: 100%;
-  max-width: 300px;
-  margin-bottom: 24px;
-  padding: 16px;
-  text-align: center;
-  background-color: black; /* Add black background */
-}
-.certification-card img {
-  width: 100%;
-}
-.certification-card p {
-  margin: 0; /* Resetting default margin */
-}
-
-</style>
+<head>
+  <title>HARSHA Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+    #main {
+      margin-left: 120px;
+    }
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+    .image-container {
+      width: 992px;
+      height: 580px;
+      overflow: hidden;
+    }
+    .certification-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .certification-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 24px;
+      padding: 16px;
+      text-align: center;
+      background-color: black;
+    }
+    .certification-card img {
+      width: 100%;
+    }
+    .certification-card p {
+      margin: 0;
+    }
+    @media only screen and (max-width: 600px) {
+      .w3-sidebar {
+        display: none;
+      }
+      #main {
+        margin-left: 0;
+      }
+      .image-container {
+        width: 100%;
+        height: auto;
+      }
+      .certification-card {
+        max-width: 100%;
+      }
+      .w3-row-padding img {
+        margin-bottom: 8px;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .image-container {
+        width: 100%;
+        height: auto;
+      }
+    }
+    @media only screen and (max-width: 1200px) {
+      #main {
+        margin-left: 0;
+      }
+    }
+    body {
+      overflow-y: auto;
+    }
+    @media only screen and (max-width: 600px) {
+      .w3-sidebar {
+        width: 100%;
+      }
+      .w3-top {
+        display: none;
+      }
+      .image-container {
+        width: 100%;
+        height: auto;
+      }
+      .certification-card {
+        max-width: 100%;
+      }
+      .w3-row-padding img {
+        margin-bottom: 8px;
+      }
+    }
+    .about-section,
+    .portfolio-section,
+    .contact-section {
+      padding: 64px 0;
+    }
+    @media only screen and (max-width: 600px) {
+      .about-section,
+      .portfolio-section,
+      .contact-section {
+        padding: 32px 0;
+      }
+    }
+  </style>
+</head>
 <body class="w3-black">
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<!-- Sidebar (hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="./newbbp.png" style="width:100%"><!-- sie pic-->
+  <img src="./newbbp.png" style="width:100%">
   <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -76,6 +135,7 @@ body, h1, h2, h3, h4, h5, h6 {
     <p>CONTACT</p>
   </a>
 </nav>
+
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
@@ -85,6 +145,7 @@ body, h1, h2, h3, h4, h5, h6 {
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
+
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
@@ -92,17 +153,18 @@ body, h1, h2, h3, h4, h5, h6 {
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Harsha Venkat.</h1>
     <p> Web Designer and Data scientist.</p>
     <div class="image-container">
-        <img src="./newbbp.png" alt="boy" class="w3-image" width="992" height="1108"  id="mainImage" onmouseover="changeImage()" onmouseout="restoreImage()">
-        <img src="./newc.png" alt="another image" class="w3-image" width="992" height="1108" id="hoverImage" style="display: none;">
+      <img src="./newbbp.png" alt="boy" class="w3-image" width="992" height="1108"  id="mainImage" onmouseover="changeImage()" onmouseout="restoreImage()">
+      <img src="./newc.png" alt="another image" class="w3-image" width="992" height="1108" id="hoverImage" style="display: none;">
     </div>
   </header>
+
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">My Name</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>My name is Imadabathuni Harsha Venkat. During my first year in the Electronics and Communication Engineering (ECE) branch, I embarked on a project focused on banking security. This project aimed to enhance the security measures within banking systems, leveraging my skills in programming and interest in technology. The project was well-received, and I was recognized for my dedication and innovation. My Head of Department (HoD) appreciated my efforts and even recommended me for further opportunities.
-        In addition to academic projects, I actively sought practical experience through virtual internships in web development. These experiences allowed me to apply my knowledge and skills to real-world scenarios. I undertook projects such as building my own website and creating a resume website, which helped me sharpen my web development skills and gain hands-on experience in designing and implementing web applications. Furthermore, I worked on projects like developing a Netflix clone, which involved understanding complex systems and implementing user-friendly interfaces.
-        Through these experiences, I not only honed my technical abilities but also developed strong problem-solving and collaboration skills. I am enthusiastic about leveraging my background in ECE and my growing expertise in web development to contribute meaningfully to innovative projects and continue my journey of learning and growth in the field of technology.
+    In addition to academic projects, I actively sought practical experience through virtual internships in web development. These experiences allowed me to apply my knowledge and skills to real-world scenarios. I undertook projects such as building my own website and creating a resume website, which helped me sharpen my web development skills and gain hands-on experience in designing and implementing web applications. Furthermore, I worked on projects like developing a Netflix clone, which involved understanding complex systems and implementing user-friendly interfaces.
+    Through these experiences, I not only honed my technical abilities but also developed strong problem-solving and collaboration skills. I am enthusiastic about leveraging my background in ECE and my growing expertise in web development to contribute meaningfully to innovative projects and continue my journey of learning and growth in the field of technology.
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Photography</p>
@@ -117,7 +179,6 @@ body, h1, h2, h3, h4, h5, h6 {
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
     </div><br>
-    
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">8+</span><br>
@@ -146,13 +207,11 @@ body, h1, h2, h3, h4, h5, h6 {
         <img src="./blackc.jpg" alt="Certification 1" style="width:100%">
         <a href="./228T1A4248_c language_spoken tutorial2023-2024sem1.pdf" alt="Certification 1" style="width:100%" >view certificate</a>
         <h3> C Programming Language Proficiency</h3>
-        
       </div>
       <p>This certificate attests that the recipient has demonstrated proficiency in the C programming language through completion of the C programming course offered by the Spoken Tutorial Project, IIT Bombay. The course covers fundamental concepts of C programming, including syntax, data types, control structures, functions, arrays, pointers, and file handling. By successfully completing the course, the recipient has acquired essential skills in C programming, enabling them to write, compile, and debug C programs effectively. This certification serves as recognition of the recipient's competence in C programming, a foundational skill for software development and computer science disciplines.</p>
 
       <div class="certification-card">
-
-        <img  src="./png-transparent-java-development-kit-software-development-kit-computer-programming-computer-icons-programming-language-icon-text-logo-computer-programming-removebg-preview.png" alt="Certification 2" style="width:100%; ">
+        <img src="./png-transparent-java-development-kit-software-development-kit-computer-programming-computer-icons-programming-language-icon-text-logo-computer-programming-removebg-preview.png" alt="Certification 2" style="width:100%; ">
         <a href="./228T1A4248_Java developer test_infosys springboard2023-2024sem1.pdf">view certificate</a>
         <h3>Java Developer Certification</h3>
       </div>
@@ -165,43 +224,40 @@ body, h1, h2, h3, h4, h5, h6 {
       </div>
       <p>
         This certification validates that the recipient has successfully completed the Python Foundation Certification program offered by Infosys Springboard. The program covers essential concepts of Python programming, including data types, control structures, functions, object-oriented programming, and file handling. By obtaining this certification, the recipient demonstrates proficiency in Python programming and possesses the fundamental skills required for various roles in software development, data science, machine learning, and more.
-    </p>
-    
-
-      <!-- Add more certification cards as needed -->
+      </p>
     </div>
   </div>
   <!-- End About Section -->
-</div>
-<!-- Portfolio Section -->
-<div class="w3-padding-64 w3-content" id="photos">
-  <h2 class="w3-text-light-grey">My Photos</h2>
-  <hr style="width:200px" class="w3-opacity">
-  <!-- Grid for photos -->
-  <div class="w3-row-padding" style="margin:0 -16px">
-    <div class="w3-half">
-      <img src="9.jpg" style="width:100%">
-      <img src="8.jpg" style="width:100%">
-      <img src="7.jpg" style="width:100%">
-      <img src="3.jpg" style="width:100%">
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="9.jpg" style="width:100%">
+        <img src="8.jpg" style="width:100%">
+        <img src="7.jpg" style="width:100%">
+        <img src="3.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="6.jpg" style="width:100%">
+        <img src="5.jpg" style="width:100%">
+        <img src="4.jpg" style="width:100%">
+      </div>
     </div>
-    <div class="w3-half">
-      <img src="6.jpg" style="width:100%">
-      <img src="5.jpg" style="width:100%">
-      <img src="4.jpg" style="width:100%">
-      
-    </div>
-  <!-- End photo grid -->
+    <!-- End photo grid -->
   </div>
-<!-- End Portfolio Section -->
-</div>
-<!-- Contact Section -->
-<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-  <h2 class="w3-text-light-grey">Contact Me</h2>
-  <hr style="width:200px" class="w3-opacity">
-  <div class="w3-section">
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kukatpally, Hyderabad</p>
-    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 630468***7</p>
+  <!-- End Portfolio Section -->
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kukatpally, Hyderabad</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 630468***7</p>
     <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Imadabathuniharsha@mail.com</p>
   </div><br>
   <p>Let's get in touch. Send me a message:</p>
